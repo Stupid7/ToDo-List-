@@ -1,0 +1,88 @@
+/*setting up Div in middle */
+#container{
+	background-color: lightgray;
+	width:360px;
+	margin:0 auto;
+	box-shadow: 2px 2px 5px gray;
+	padding: 20px 20px;
+	box-sizing: content-box;
+}
+
+/*class for line throung on click*/
+.strike{
+	text-decoration: line-through;
+	color:#4c0001;
+}
+/*for history Div*/
+#history{
+	width:360px;
+	margin:0 auto;
+	box-shadow: 2px 2px 5px gray;
+	display:none;
+	padding: 2px 2px;	
+	box-sizing: content-box;
+}
+#history{
+	background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#history ul{
+	list-style: none;
+	margin:5px;
+	padding:5px;
+}
+/*for h1*/
+h1{
+	background-color: #501155;
+	margin: 0;
+	text-align: center;
+	padding:10px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+/*for no bullet point*/
+#container ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+/*FOr li's*/
+ul:nth-of-type(1) li{
+	background-color: #acb6e5;
+	height:40px;
+}
+#container li:nth-child(2n){
+	background-color: gray;
+}
+/*FOr input*/
+input:focus{
+	background: #fff;
+	border:1px solid #2980b9;
+}
+
+body{
+	background: #ff9966;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+span{
+	background: red;
+	margin-right: 20px;
+	color:white;
+	display: inline-block;
+	width:0px;
+	display: inline-block;
+	transition: 0.3s linear;
+	opacity: 0;
+	height: 40px;
+	text-align: center;
+}
+li:hover span{
+	opacity:1;
+	width:40px;
+}
+input{
+	border:3px solid rgba(0,0,0,0);
+}
